@@ -8,12 +8,12 @@ get '/' do
 end
 
 get '/pass' do
-  serialport.write("O")
+  serialport.write("P")
   "Pass"
 end
 
 get '/fail' do
-  serialport.write("A")
+  serialport.write("F")
   "Fail"
 end
 
